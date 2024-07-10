@@ -1,0 +1,32 @@
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.three.columns {
+    flex: 1 1 25%;
+    max-width: 25%;
+}
+
+.nine.columns {
+    flex: 1 1 70%;
+    max-width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    .three.columns {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .nine.columns {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
